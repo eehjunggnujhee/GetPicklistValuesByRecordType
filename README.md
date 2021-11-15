@@ -21,7 +21,7 @@ Once the pre-deployment Configuration and source deployment is done, open up the
 1. Deploy the project source from the project directory
 2. Make sure the running user has appropriate permissions to the source
 3. Watch! 
-[![video](assets/GetPicklistValuesByRecordType.png)](assets/GetPicklistValuesByRecordType.mov)
+[![video](assets/GetPicklistValuesByRecordType.png)](https://youtu.be/NddCDPJNqh4)
 
 ### Credits and Resources
 
