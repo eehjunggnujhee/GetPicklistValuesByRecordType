@@ -3,7 +3,7 @@
 We want the [Salesforce native Metadata API](https://ideas.salesforce.com/s/idea/a0B8W00000Gdm2SUAR/ability-to-update-metadata-from-apex-apex-metadata-api)! Retrieving picklist values of a record type wasn't an easy task! I wish it is as easy as using Schema class. That explains why there isn't a readly available free in-app that can help Salesforce administrators retrieve picklist values assigned to a record type (Let me know if you know any). I use apex-mdapi open source SOAP API wrapper to build the in-app Salesforce solution as needed. This is strictly a personal project intended for expansion of knowledge.
 
 
-## Pre-Reployment Configuration: Set up Authentication to Own Org
+## Pre-Deployment Configuration: Set up Authentication to Own Org
 The package requires the following pre-deployment configuration described below:
 
 >> [Original Post](https://www.gscloudsolutions.com/blogpost/Using-Named-Credentials-with-the-Apex-Wrapper-Salesforce-Metadata-API-apex-mdapi?blogpost=true&utm_source=twitter&utm_medium=social&utm_campaign=named_credentials) 
@@ -16,6 +16,12 @@ The package requires the following pre-deployment configuration described below:
 
 ## Authenticate into Your Own Org
 Once the pre-deployment Configuration and source deployment is done, open up the Naming Credential and click Edit and Save. The page redirects to login page for the authentication into the org.
+
+## Deploy the Source
+1. Deploy the project source from the project directory
+2. Make sure the running user has appropriate permissions to the source
+3. Watch! 
+[![video](assets/GetPicklistValuesByRecordType.png)](assets/GetPicklistValuesByRecordType.mov)
 
 ### Credits and Resources
 
