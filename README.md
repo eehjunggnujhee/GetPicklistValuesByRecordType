@@ -4,7 +4,7 @@ We want the [Salesforce native Metadata API](https://ideas.salesforce.com/s/idea
 
 
 ## Pre-Reployment Configuration: Set up Authentication to Own Org
-The package need pre-deployment configuration described below:
+The package requires the following pre-deployment configuration described below:
 
 >> [Original Post](https://www.gscloudsolutions.com/blogpost/Using-Named-Credentials-with-the-Apex-Wrapper-Salesforce-Metadata-API-apex-mdapi?blogpost=true&utm_source=twitter&utm_medium=social&utm_campaign=named_credentials) 
 
