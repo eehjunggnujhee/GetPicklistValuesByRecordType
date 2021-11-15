@@ -1,0 +1,38 @@
+<apex:page controller="GetPicklistValuesController" lightningStyleSheets="true">
+    <apex:form >
+        <apex:pageBlock title="Object + Record Type + Field">
+            <!-- select object type -->
+            <apex:pageBlockSection columns="2">
+                <apex:selectList value="{!selectedObj}" size="1" multiselect="false" label="Object Type" title="Object Types" id="objectTypes">
+                    <apex:actionSupport event="onchange" action="{!getObjectTypeList}" />
+                    <apex:selectOptions value="{!sObjectTypeList}" />
+                </apex:selectList>
+                <apex:commandButton value="Search" action="{!getRecordType}" id="Search" onclick="this.style.display = 'none'" reRender="recordTypes,Picklists"/>
+             <!-- select record type -->
+                <apex:selectList value="{!selectedRT}" size="1" multiselect="false" label="Record Type" title="Record Types" id="recordTypes"> 
+                    <apex:selectOptions value="{!RecordTypeList}" /> 
+                </apex:selectList>
+                <br/>
+            <!-- list picklist fields -->
+                <apex:selectList value="{!selectedPlist}" size="1" multiselect="false" label="Picklist Field" title="Picklist Fields" id="Picklists"> 
+                    <apex:selectOptions value="{!picklistList}" /> 
+                </apex:selectList>
+                <apex:pageBlockSectionItem>
+                    <apex:commandButton value="Retrieve" action="{!getPicklistValues}" id="Retrieve" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock title="Picklist Values">
+            <!-- list picklist values -->
+            <apex:pageBlockSection>
+                <apex:pageBlockSectionItem>
+                    <apex:repeat value="{!listofValues}" var="values">
+                        <apex:repeat value="{!values}" var="value">
+                        <apex:outputText value="{!value}" /><br/>
+                        </apex:repeat>
+                    </apex:repeat>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
